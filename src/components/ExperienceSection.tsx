@@ -4,7 +4,7 @@ import { experience } from "../data/portfolio";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24">
+    <section id="experience" className="py-12">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

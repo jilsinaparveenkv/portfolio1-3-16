@@ -4,7 +4,7 @@ import { education } from "../data/portfolio";
 
 export default function EducationSection() {
   return (
-    <section id="education" className="py-24">
+    <section id="education" className="py-12">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

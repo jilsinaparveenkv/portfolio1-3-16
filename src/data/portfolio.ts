@@ -1,25 +1,32 @@
 export const profile = {
-  name: "Jilsina Parveen K V",
+  name: "Jilsina Parveen KV",
   title: "Full Stack Developer",
   tagline: "Building scalable web applications with modern technologies.",
-  about: `Passionate Full Stack Developer with hands-on experience building 20+ production websites across healthcare, education, and travel industries. I specialize in creating responsive, performant web applications using React, TypeScript, and modern tooling. Currently working at Think Forge Global, where I transform client visions into polished digital products.`,
+  about: `Passionate Full Stack Developer with hands-on experience building 10+ production websites across healthcare, education, and travel industries. I specialize in creating responsive, performant web applications using React, TypeScript, and modern tooling. Currently working at Think Forge Global, where I transform client visions into polished digital products.`,
   highlights: [
-    "Built & deployed 20+ client websites",
+    "Built & deployed 10+ client websites",
     "Worked across healthcare, education & travel sectors",
     "Specialized in React & TypeScript ecosystems",
   ],
-  email: "jilsinaparveen001@gmail.com",
-  phone: "7306613078",
-  linkedin: "https://linkedin.com/in/jilsinaparveen",
-  github: "https://github.com/jilsinaparveen",
+  email: "jilsinaparveen01@gmail.com",
+  phone: "7306613005",
+  linkedin: "https://www.linkedin.com/in/jilsina-parveen-k-v-368304315/",
+  github: "https://github.com/jilsinaparveenkv",
   location: "Kerala, India",
 };
 
 export const skills = {
-  Frontend: ["React.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+  Frontend: ["Next.js","React.js", "TypeScript", "JavaScript", "Tailwind CSS"],
   Backend: ["Node.js", "API Integration", "Supabase"],
   "Tools & Ecosystem": ["Git / GitHub", "Figma", "Postman"],
 };
+
+import suryaKiranPhysioImg from "../public/images/projects/surya_kiran_physio.jpg";
+import dayOffJourneysImg from "../public/images/projects/day_off_journeys.jpg";
+import formFieldEduImg from "../public/images/projects/form_&_field_edu.jpg";
+import newSevanaMedicalsImg from "../public/images/projects/new_sevana_medicals.jpg";
+import chamayamImg from "../public/images/projects/chamayam.jpg";
+import echoHearingAidImg from "../public/images/projects/echo_hearing_aid.jpg";
 
 export interface Project {
   title: string;
@@ -27,6 +34,7 @@ export interface Project {
   tech: string[];
   liveUrl: string;
   category: string;
+  imageUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -36,6 +44,7 @@ export const projects: Project[] = [
     tech: ["React", "Tailwind CSS", "TypeScript"],
     liveUrl: "https://www.suryakiranphysio.com/",
     category: "Healthcare",
+    imageUrl: suryaKiranPhysioImg,
   },
   {
     title: "Day Off Journeys",
@@ -43,6 +52,7 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "Tailwind CSS"],
     liveUrl: "https://www.dayoffjourneys.com/",
     category: "Travel",
+    imageUrl: dayOffJourneysImg,
   },
   {
     title: "Form & Field Edu",
@@ -50,6 +60,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://www.formandfieldedu.in/",
     category: "Education",
+    imageUrl: formFieldEduImg,
   },
   {
     title: "New Sevana Medicals",
@@ -57,6 +68,7 @@ export const projects: Project[] = [
     tech: ["React", "Supabase", "TypeScript"],
     liveUrl: "https://new-sevana-medicals.vercel.app/products",
     category: "Healthcare",
+    imageUrl: newSevanaMedicalsImg,
   },
   {
     title: "Chamayam",
@@ -64,6 +76,7 @@ export const projects: Project[] = [
     tech: ["React", "Tailwind CSS", "JavaScript"],
     liveUrl: "https://chamayam-mtj6.vercel.app/",
     category: "Events",
+    imageUrl: chamayamImg,
   },
   {
     title: "Echo Hearing Aid",
@@ -71,6 +84,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Node.js"],
     liveUrl: "https://www.echohearingaid.com/",
     category: "Healthcare",
+    imageUrl: echoHearingAidImg,
   },
 ];
 
